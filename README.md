@@ -2,6 +2,10 @@
 
 Open-source MCP compatibility tooling.
 
+[![CI](https://github.com/vishmathpati/mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/vishmathpati/mcp/actions/workflows/ci.yml)
+
+License: [MIT](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/LICENSE)
+
 This repo is building the first release of a deterministic MCP converter:
 
 - paste a supported MCP snippet
@@ -56,6 +60,7 @@ This repo tracks tools in three levels:
 - `planned`: known target, schema placeholder only
 
 See [docs/support-matrix.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/support-matrix.md) for the current support inventory.
+See [docs/roadmap.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/roadmap.md) for next milestones.
 
 ## Real Provider Fixtures
 
@@ -86,3 +91,9 @@ npm install
 npm test
 npm run dev
 ```
+
+## Open Source
+
+- [CONTRIBUTING.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/CONTRIBUTING.md)
+- [SECURITY.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/SECURITY.md)
+- [CODE_OF_CONDUCT.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/CODE_OF_CONDUCT.md)
