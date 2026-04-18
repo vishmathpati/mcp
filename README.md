@@ -94,6 +94,21 @@ npm test
 npm run dev
 ```
 
+## Deploy
+
+For Vercel, deploy from the repo root, not from `apps/web`.
+
+This project is a monorepo:
+
+- `apps/web` is the site
+- `packages/core` is the shared conversion engine the site depends on
+
+The included [vercel.json](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/vercel.json) tells Vercel to:
+
+- install from the repo root
+- build the full monorepo with `npm run build`
+- publish `apps/web/dist`
+
 ## Open Source
 
 - [CONTRIBUTING.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/CONTRIBUTING.md)
