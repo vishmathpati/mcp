@@ -1,13 +1,17 @@
 {
   "id": "amazon-q-cli",
   "displayName": "Amazon Q CLI",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools", "prompts"],
   "unsupportedCapabilities": [],
   "homepage": "https://aws.amazon.com/q/developer/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked in source of truth for later formatter validation."]
+  "sourceReference": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html",
+  "notes": [
+    "Official docs say the CLI agent configuration uses a top-level mcpServers field.",
+    "Official docs and agent-format guide document local servers with command, args, and env.",
+    "Official docs document remote servers with type http and url."
+  ]
 }

@@ -1,17 +1,18 @@
 {
   "id": "opencode",
   "displayName": "OpenCode",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "opencode-mcp",
   "configFormat": "jsonc",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
-  "supportedCapabilities": ["tools"],
-  "unsupportedCapabilities": ["resources", "prompts"],
+  "supportedCapabilities": ["tools", "prompts"],
+  "unsupportedCapabilities": ["resources"],
   "homepage": "https://opencode.ai/",
   "sourceReference": "https://opencode.ai/docs/mcp-servers/",
   "notes": [
     "Official docs use opencode.json or opencode.jsonc with a top-level mcp object, not mcpServers.",
     "Local MCP servers use type local with command arrays and environment fields.",
-    "Remote MCP servers use type remote with url, headers, and OAuth settings."
+    "Remote MCP servers use type remote with url, headers, and OAuth settings.",
+    "This formatter emits the documented top-level schema and mcp block."
   ]
 }
