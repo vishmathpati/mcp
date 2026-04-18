@@ -18,13 +18,13 @@ This file is the human-readable view of the repo-owned source of truth.
 - VS Code GitHub Copilot
 - Windsurf
 - Zed
+- Warp
 
 ### Tracked next
 
 - Amp
 - Augment Code
 - Replit
-- Warp
 
 ### Planned
 

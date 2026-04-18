@@ -204,6 +204,34 @@ describe("convertSnippet", () => {
     ).toBe(false);
   });
 
+  it("converts the Hostinger fixture to Warp CLI MCP format", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/hostinger/claude-code/source.txt"),
+      "warp"
+    );
+
+    expect(result.output).toContain("\"mcpServers\": {");
+    expect(result.output).toContain("\"hostinger-api\": {");
+    expect(result.output).toContain("\"command\": \"hostinger-api-mcp\"");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
+  it("converts the Supabase fixture to Warp URL MCP format", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/supabase/claude-code/source.txt"),
+      "warp"
+    );
+
+    expect(result.output).toContain("\"mcpServers\": {");
+    expect(result.output).toContain("\"supabase\": {");
+    expect(result.output).toContain("\"url\": \"https://mcp.supabase.com/mcp\"");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
   it("fails loudly on unsupported prose input", () => {
     expect(() => convertSnippet("hello world random text", "codex")).toThrowError(
       /supported/i
