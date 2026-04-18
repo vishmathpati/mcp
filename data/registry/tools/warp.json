@@ -1,13 +1,17 @@
 {
   "id": "warp",
   "displayName": "Warp",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools", "resources"],
   "unsupportedCapabilities": [],
   "homepage": "https://www.warp.dev/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked in source of truth for later formatter validation."]
+  "sourceReference": "https://docs.warp.dev/agent-platform/warp-agents/mcp",
+  "notes": [
+    "Official docs say most MCP client JSON snippets can be pasted directly into Warp.",
+    "CLI MCP servers use command, args, env, and optional working_directory.",
+    "URL MCP servers use url and headers, with Warp supporting both streamable HTTP(S) and SSE endpoints."
+  ]
 }
