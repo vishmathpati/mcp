@@ -1,13 +1,17 @@
 {
   "id": "augment-code",
   "displayName": "Augment Code",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools"],
   "unsupportedCapabilities": [],
   "homepage": "https://www.augmentcode.com/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked in source of truth for later formatter validation."]
+  "sourceReference": "https://docs.augmentcode.com/cli/integrations",
+  "notes": [
+    "Auggie persists MCP servers in ~/.augment/settings.json with a top-level mcpServers object.",
+    "Local stdio servers use command, args, and env without an explicit type field.",
+    "Remote servers use explicit type values such as http or sse, so the formatter emits type http for hosted MCPs."
+  ]
 }
