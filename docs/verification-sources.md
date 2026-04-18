@@ -14,6 +14,7 @@ This file tracks the primary sources used to move tools from `registry-seeded` t
 | Cursor | https://docs.cursor.com/context/model-context-protocol | Official docs confirm local and remote MCP support in `mcpServers` config. |
 | OpenAI Codex | https://platform.openai.com/docs/codex/mcp | Official docs for Codex MCP configuration shape. |
 | OpenCode | https://opencode.ai/docs/mcp-servers/ | Uses a distinct `opencode.json` config with a top-level `mcp` block. |
+| Roo Code | https://docs.roocode.com/features/mcp/using-mcp-in-roo | Official docs cover global `mcp_settings.json`, project `.roo/mcp.json`, and explicit remote transport types. |
 | VS Code GitHub Copilot | https://code.visualstudio.com/docs/copilot/chat/mcp-servers | Official docs cover MCP server configuration in VS Code. |
 | Windsurf | https://docs.windsurf.com/windsurf/cascade/mcp | Official docs cover `~/.codeium/windsurf/mcp_config.json`, `mcpServers`, and remote `serverUrl`. |
 
