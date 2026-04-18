@@ -52,6 +52,20 @@ export function assessCompatibility(
           "Roo Code URL-based servers require an explicit transport type. This conversion defaults to streamable-http; switch to sse if the provider is still using the legacy SSE transport."
       });
     }
+
+    if (
+      toolId === "zed" &&
+      server.transport.type === "http" &&
+      !Object.keys(server.transport.headers).some(
+        (header) => header.toLowerCase() === "authorization"
+      )
+    ) {
+      warnings.push({
+        code: "zed-oauth-prompt",
+        message:
+          "Zed may prompt for standard MCP OAuth when a remote server has no Authorization header configured."
+      });
+    }
   }
 
   return warnings;
