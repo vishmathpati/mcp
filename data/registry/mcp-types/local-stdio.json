@@ -1,0 +1,8 @@
+{
+  "id": "local-stdio",
+  "displayName": "Local stdio MCP",
+  "transport": "stdio",
+  "description": "Local command-based MCP server launched by the client.",
+  "requiredFields": ["command"],
+  "optionalFields": ["args", "env"]
+}

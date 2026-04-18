@@ -1,0 +1,13 @@
+{
+  "id": "codex",
+  "displayName": "OpenAI Codex",
+  "supportLevel": "converter-ready",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
+  "supportedCapabilities": ["tools", "resources"],
+  "unsupportedCapabilities": ["apps"],
+  "homepage": "https://openai.com/codex/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Seeded from MCP client registry and targeted in release 1."]
+}

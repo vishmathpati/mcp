@@ -1,0 +1,13 @@
+{
+  "id": "cursor",
+  "displayName": "Cursor",
+  "supportLevel": "converter-ready",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
+  "supportedCapabilities": ["tools", "prompts"],
+  "unsupportedCapabilities": ["apps"],
+  "homepage": "https://www.cursor.com/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Release-1 target tool."]
+}

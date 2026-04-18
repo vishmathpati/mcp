@@ -1,0 +1,22 @@
+{
+  "name": "mcp-converter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @mcp-converter/core && npm run build --workspace @mcp-converter/web",
+    "dev": "npm run dev --workspace @mcp-converter/web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "npm run typecheck --workspace @mcp-converter/core && npm run typecheck --workspace @mcp-converter/web"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

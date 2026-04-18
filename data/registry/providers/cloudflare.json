@@ -1,0 +1,10 @@
+{
+  "id": "cloudflare",
+  "displayName": "Cloudflare",
+  "homepage": "https://www.cloudflare.com/",
+  "docsReference": "https://developers.cloudflare.com/",
+  "authMode": "oauth",
+  "knownMcpTypes": ["hosted-remote"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": ["Registry-seeded provider entry for future fixture support."]
+}

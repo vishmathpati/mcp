@@ -1,0 +1,13 @@
+{
+  "id": "windsurf",
+  "displayName": "Windsurf",
+  "supportLevel": "registry-seeded",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedCapabilities": ["tools"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://windsurf.com/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Growing tool called out by the user."]
+}

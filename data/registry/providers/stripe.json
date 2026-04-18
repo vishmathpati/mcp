@@ -1,0 +1,10 @@
+{
+  "id": "stripe",
+  "displayName": "Stripe",
+  "homepage": "https://stripe.com/",
+  "docsReference": "https://docs.stripe.com/",
+  "authMode": "oauth",
+  "knownMcpTypes": ["hosted-remote"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": ["Registry-seeded provider entry for future fixture support."]
+}

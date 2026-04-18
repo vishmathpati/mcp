@@ -1,0 +1,13 @@
+{
+  "id": "replit",
+  "displayName": "Replit",
+  "supportLevel": "registry-seeded",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["hosted-remote"],
+  "supportedCapabilities": ["tools"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://replit.com/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Tracked in source of truth for later formatter validation."]
+}

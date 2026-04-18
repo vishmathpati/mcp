@@ -1,0 +1,13 @@
+{
+  "id": "cline",
+  "displayName": "Cline",
+  "supportLevel": "registry-seeded",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedCapabilities": ["tools", "resources"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://cline.bot/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Tracked in source of truth for later formatter validation."]
+}

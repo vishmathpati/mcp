@@ -1,0 +1,16 @@
+{
+  "id": "continue",
+  "displayName": "Continue",
+  "supportLevel": "converter-ready",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
+  "supportedCapabilities": ["tools", "resources", "prompts"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://continue.dev/",
+  "sourceReference": "https://docs.continue.dev/customize/deep-dives/mcp",
+  "notes": [
+    "Official docs say Continue can pick up JSON MCP config files used by Claude Desktop, Cursor, and Cline.",
+    "Official docs document stdio, sse, and streamable-http transport support."
+  ]
+}

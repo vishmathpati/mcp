@@ -1,0 +1,65 @@
+# Support Matrix
+
+This file is the human-readable view of the repo-owned source of truth.
+
+## Tool Coverage
+
+### Verified now
+
+- Claude Code
+- Claude Desktop
+- Continue
+- OpenAI Codex
+- Cursor
+- VS Code GitHub Copilot
+
+### Tracked next
+
+- Amazon Q CLI
+- Amp
+- Augment Code
+- Cline
+- OpenCode
+- Replit
+- Roo Code
+- Warp
+- Windsurf
+- Zed
+
+### Planned
+
+- T3 Chat
+
+## Provider Coverage
+
+- Cloudflare
+- GitHub
+- Hostinger
+- Notion
+- Stripe
+- Supabase
+- Vercel
+
+## MCP Transport Types
+
+- Local stdio
+- Hosted remote HTTP
+- Streamable HTTP
+
+Auth is tracked separately from transport. Current provider auth modes in the registry include `env`, `oauth`, and `hosted-login`.
+
+## Trust Model
+
+- `verified now` means the formatter path is intended to work in the current converter scaffold.
+- `tracked next` means the tool is already part of the registry and UI surface, but still needs fixture-backed verification against official docs.
+- `planned` means the repo knows the tool exists, but we are not claiming conversion support yet.
+- Some tracked tools already have official docs, but use a different config family. OpenCode is the current example: its official shape is `opencode.json` with a top-level `mcp` block, so it remains tracked until that formatter exists.
+
+## Fixture Rule
+
+Nothing moves from `tracked next` to `verified now` without:
+
+- at least one real provider fixture
+- a passing parser test
+- a passing conversion test
+- explicit manual-step and warning behavior where needed

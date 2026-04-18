@@ -1,0 +1,13 @@
+{
+  "id": "vscode-github-copilot",
+  "displayName": "VS Code GitHub Copilot",
+  "supportLevel": "converter-ready",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
+  "supportedCapabilities": ["tools", "resources", "prompts"],
+  "unsupportedCapabilities": ["apps"],
+  "homepage": "https://code.visualstudio.com/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Release-1 target tool."]
+}

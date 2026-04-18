@@ -1,0 +1,13 @@
+{
+  "id": "roo-code",
+  "displayName": "Roo Code",
+  "supportLevel": "registry-seeded",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedCapabilities": ["tools", "resources"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://roocode.com/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Tracked for future release expansion."]
+}

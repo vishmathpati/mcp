@@ -1,0 +1,10 @@
+{
+  "id": "vercel",
+  "displayName": "Vercel",
+  "homepage": "https://vercel.com/",
+  "docsReference": "https://vercel.com/docs",
+  "authMode": "oauth",
+  "knownMcpTypes": ["hosted-remote"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": ["Registry-seeded provider entry for future fixture support."]
+}

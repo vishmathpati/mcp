@@ -1,0 +1,10 @@
+{
+  "id": "github",
+  "displayName": "GitHub",
+  "homepage": "https://github.com/",
+  "docsReference": "https://github.com/",
+  "authMode": "oauth",
+  "knownMcpTypes": ["hosted-remote"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": ["Registry-seeded provider entry for future fixture support."]
+}

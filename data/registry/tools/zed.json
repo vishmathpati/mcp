@@ -1,0 +1,13 @@
+{
+  "id": "zed",
+  "displayName": "Zed",
+  "supportLevel": "registry-seeded",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedCapabilities": ["tools", "prompts"],
+  "unsupportedCapabilities": ["resources"],
+  "homepage": "https://zed.dev/",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Tracked for future release expansion."]
+}

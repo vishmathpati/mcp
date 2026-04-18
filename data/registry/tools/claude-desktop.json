@@ -1,0 +1,13 @@
+{
+  "id": "claude-desktop",
+  "displayName": "Claude Desktop",
+  "supportLevel": "converter-ready",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedCapabilities": ["tools", "resources", "prompts"],
+  "unsupportedCapabilities": ["apps"],
+  "homepage": "https://www.anthropic.com/claude",
+  "sourceReference": "https://modelcontextprotocol.io/clients",
+  "notes": ["Release-1 target tool."]
+}

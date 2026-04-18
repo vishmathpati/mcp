@@ -1,0 +1,8 @@
+{
+  "id": "streamable-http",
+  "displayName": "Streamable HTTP MCP",
+  "transport": "streamable-http",
+  "description": "Remote MCP endpoint using streamable HTTP transport.",
+  "requiredFields": ["url"],
+  "optionalFields": ["headers"]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "notion",
+  "displayName": "Notion",
+  "homepage": "https://www.notion.so/",
+  "docsReference": "https://developers.notion.com/",
+  "authMode": "oauth",
+  "knownMcpTypes": ["hosted-remote"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": ["Registry-seeded provider entry for future fixture support."]
+}

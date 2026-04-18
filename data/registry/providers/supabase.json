@@ -1,0 +1,14 @@
+{
+  "id": "supabase",
+  "displayName": "Supabase",
+  "homepage": "https://supabase.com/",
+  "docsReference": "https://supabase.com/mcp",
+  "authMode": "hosted-login",
+  "knownMcpTypes": ["hosted-remote", "streamable-http"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": [
+    "Official hosted MCP docs show remote URL-based configuration.",
+    "Some clients trigger browser-based auth during setup.",
+    "Manual header-based auth exists for CI or non-DCR clients."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "t3-chat",
+  "displayName": "T3 Chat",
+  "supportLevel": "planned",
+  "configFamily": "json-mcpServers",
+  "configFormat": "json",
+  "supportedMcpTypes": ["hosted-remote"],
+  "supportedCapabilities": ["tools"],
+  "unsupportedCapabilities": [],
+  "homepage": "https://t3.chat/",
+  "sourceReference": "https://t3.chat/",
+  "notes": ["User-requested growing tool placeholder pending verified MCP docs."]
+}

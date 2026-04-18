@@ -1,0 +1,13 @@
+{
+  "id": "hostinger",
+  "displayName": "Hostinger",
+  "homepage": "https://www.hostinger.com/",
+  "docsReference": "https://www.hostinger.com/support/11079316-hostinger-api-mcp-server/",
+  "authMode": "env",
+  "knownMcpTypes": ["local-stdio"],
+  "knownSourceFormats": ["json-mcpServers"],
+  "notes": [
+    "Official docs show a command-based MCP snippet using hostinger-api-mcp.",
+    "Authentication is provided through APITOKEN in env."
+  ]
+}
