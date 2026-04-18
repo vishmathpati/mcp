@@ -1,13 +1,17 @@
 {
   "id": "amp",
   "displayName": "Amp",
-  "supportLevel": "registry-seeded",
-  "configFamily": "json-mcpServers",
+  "supportLevel": "converter-ready",
+  "configFamily": "amp-settings",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools", "resources", "prompts"],
   "unsupportedCapabilities": [],
   "homepage": "https://ampcode.com/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked in source of truth for later formatter validation."]
+  "sourceReference": "https://ampcode.com/manual",
+  "notes": [
+    "Amp stores MCP configuration under the amp.mcpServers setting in user or workspace settings files.",
+    "Local servers use command, args, and env.",
+    "Remote servers use url and optional headers, with OAuth handled separately by Amp."
+  ]
 }

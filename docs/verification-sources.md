@@ -7,6 +7,7 @@ This file tracks the primary sources used to move tools from `registry-seeded` t
 | Tool | Primary source | Notes |
 | --- | --- | --- |
 | Amazon Q CLI | https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html | Official docs show `mcpServers` plus remote `type: "http"` support. |
+| Amp | https://ampcode.com/manual | Public manual documents `amp.mcpServers`, local command-based servers, remote `url`-based servers, and MCP permissions/OAuth flows. |
 | Augment Code | https://docs.augmentcode.com/cli/integrations | Official Auggie docs cover `~/.augment/settings.json`, `mcpServers`, and explicit remote `http`/`sse` transport types. |
 | Claude Code | https://docs.anthropic.com/en/docs/claude-code/mcp | Source-format baseline used by current fixtures and parser coverage. |
 | Claude Desktop | https://modelcontextprotocol.io/quickstart/user | Shared `mcpServers` family coverage, kept visible as a supported target. |

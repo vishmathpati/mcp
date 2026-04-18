@@ -7,6 +7,7 @@ This file is the human-readable view of the repo-owned source of truth.
 ### Verified now
 
 - Amazon Q CLI
+- Amp
 - Augment Code
 - Claude Code
 - Claude Desktop
@@ -23,7 +24,6 @@ This file is the human-readable view of the repo-owned source of truth.
 
 ### Tracked next
 
-- Amp
 - Replit
 
 ### Planned

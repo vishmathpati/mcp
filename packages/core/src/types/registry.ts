@@ -3,7 +3,8 @@ export type SupportLevel = "converter-ready" | "registry-seeded" | "planned";
 export type ConfigFamily =
   | "json-mcpServers"
   | "opencode-mcp"
-  | "zed-context-servers";
+  | "zed-context-servers"
+  | "amp-settings";
 
 export type ToolRegistryEntry = {
   id: string;
