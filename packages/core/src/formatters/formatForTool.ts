@@ -59,6 +59,34 @@ export function formatForTool(canonical: CanonicalSnippet, toolId: string): stri
 
   const mcpServers = Object.fromEntries(
     canonical.servers.map((server) => {
+      if (toolId === "cline") {
+        if (server.transport.type === "stdio") {
+          return [
+            server.id,
+            {
+              type: "stdio",
+              command: server.transport.command,
+              args: server.transport.args,
+              env: Object.keys(server.env).length > 0 ? server.env : undefined,
+              disabled: false
+            }
+          ];
+        }
+
+        return [
+          server.id,
+          {
+            type: "streamableHttp",
+            url: server.transport.url,
+            headers:
+              Object.keys(server.transport.headers).length > 0
+                ? server.transport.headers
+                : undefined,
+            disabled: false
+          }
+        ];
+      }
+
       if (server.transport.type === "stdio") {
         return [
           server.id,

@@ -1,7 +1,7 @@
 {
   "id": "cline",
   "displayName": "Cline",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
@@ -11,7 +11,8 @@
   "sourceReference": "https://github.com/cline/cline/blob/main/docs/mcp/adding-and-configuring-servers.mdx",
   "notes": [
     "Official docs show a top-level mcpServers config shape.",
-    "Local servers use command, args, env, alwaysAllow, and disabled fields.",
-    "Remote servers use url plus transport-specific type values such as streamableHttp or sse."
+    "Local servers use command, args, env, and disabled fields.",
+    "Remote servers use url plus transport-specific type values such as streamableHttp or sse.",
+    "This formatter defaults remote transport to streamableHttp and emits disabled false."
   ]
 }

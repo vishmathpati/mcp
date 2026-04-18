@@ -9,6 +9,7 @@ This file is the human-readable view of the repo-owned source of truth.
 - Amazon Q CLI
 - Claude Code
 - Claude Desktop
+- Cline
 - Continue
 - OpenAI Codex
 - OpenCode
@@ -19,7 +20,6 @@ This file is the human-readable view of the repo-owned source of truth.
 
 - Amp
 - Augment Code
-- Cline
 - Replit
 - Roo Code
 - Warp
