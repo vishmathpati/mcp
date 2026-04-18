@@ -17,6 +17,7 @@ This file tracks the primary sources used to move tools from `registry-seeded` t
 | Roo Code | https://docs.roocode.com/features/mcp/using-mcp-in-roo | Official docs cover global `mcp_settings.json`, project `.roo/mcp.json`, and explicit remote transport types. |
 | VS Code GitHub Copilot | https://code.visualstudio.com/docs/copilot/chat/mcp-servers | Official docs cover MCP server configuration in VS Code. |
 | Windsurf | https://docs.windsurf.com/windsurf/cascade/mcp | Official docs cover `~/.codeium/windsurf/mcp_config.json`, `mcpServers`, and remote `serverUrl`. |
+| Zed | https://zed.dev/docs/ai/mcp | Official docs cover `context_servers` with local `command/args/env` and remote `url/headers`. |
 
 ## Verification Rule
 

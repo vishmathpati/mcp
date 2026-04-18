@@ -1,6 +1,9 @@
 export type SupportLevel = "converter-ready" | "registry-seeded" | "planned";
 
-export type ConfigFamily = "json-mcpServers" | "opencode-mcp";
+export type ConfigFamily =
+  | "json-mcpServers"
+  | "opencode-mcp"
+  | "zed-context-servers";
 
 export type ToolRegistryEntry = {
   id: string;

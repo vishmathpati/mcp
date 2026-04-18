@@ -4,7 +4,7 @@ export const ToolRegistrySchema = z.object({
   id: z.string(),
   displayName: z.string(),
   supportLevel: z.enum(["converter-ready", "registry-seeded", "planned"]),
-  configFamily: z.enum(["json-mcpServers", "opencode-mcp"]),
+  configFamily: z.enum(["json-mcpServers", "opencode-mcp", "zed-context-servers"]),
   configFormat: z.enum(["json", "jsonc"]),
   supportedMcpTypes: z.array(z.string()),
   supportedCapabilities: z.array(z.string()),

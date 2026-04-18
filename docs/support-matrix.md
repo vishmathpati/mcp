@@ -17,6 +17,7 @@ This file is the human-readable view of the repo-owned source of truth.
 - Roo Code
 - VS Code GitHub Copilot
 - Windsurf
+- Zed
 
 ### Tracked next
 
@@ -24,7 +25,6 @@ This file is the human-readable view of the repo-owned source of truth.
 - Augment Code
 - Replit
 - Warp
-- Zed
 
 ### Planned
 
