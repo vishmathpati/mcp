@@ -23,7 +23,7 @@ This release is backed by:
 Current scaffold breadth:
 
 - 17 tracked target tools
-- 13 verified formatter targets
+- 14 verified formatter targets
 - 7 seeded providers
 - 3 MCP transport types
 
@@ -61,6 +61,7 @@ This repo tracks tools in three levels:
 
 See [docs/support-matrix.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/support-matrix.md) for the current support inventory.
 See [docs/verification-sources.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/verification-sources.md) for the source ledger behind verified targets.
+See [docs/verification-blockers.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/verification-blockers.md) for tracked targets that are still blocked on public source quality.
 See [docs/roadmap.md](/Users/vishmathpati/Arel%20OS/Projects/active/%20mcp%20converter/docs/roadmap.md) for next milestones.
 
 ## Real Provider Fixtures

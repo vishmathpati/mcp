@@ -142,6 +142,20 @@ export function formatForTool(canonical: CanonicalSnippet, toolId: string): stri
         ];
       }
 
+      if (toolId === "augment-code") {
+        return [
+          server.id,
+          {
+            type: "http",
+            url: server.transport.url,
+            headers:
+              Object.keys(server.transport.headers).length > 0
+                ? server.transport.headers
+                : undefined
+          }
+        ];
+      }
+
       if (toolId === "roo-code") {
         return [
           server.id,
