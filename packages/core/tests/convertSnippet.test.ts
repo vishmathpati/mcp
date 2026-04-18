@@ -85,13 +85,30 @@ describe("convertSnippet", () => {
     expect(result.output).toContain("\"enabled\": true");
   });
 
-  it("marks registry-seeded json-mcpServers targets with an explicit verification warning", () => {
+  it("converts the Hostinger fixture to Cline stdio format", () => {
     const result = convertSnippet(
       readFixture("data/fixtures/hostinger/claude-code/source.txt"),
       "cline"
     );
 
-    expect(result.warnings.some((warning) => warning.code === "registry-seeded-target")).toBe(
+    expect(result.output).toContain("\"type\": \"stdio\"");
+    expect(result.output).toContain("\"command\": \"hostinger-api-mcp\"");
+    expect(result.output).toContain("\"disabled\": false");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
+  it("converts the Supabase fixture to Cline remote format with transport warning", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/supabase/claude-code/source.txt"),
+      "cline"
+    );
+
+    expect(result.output).toContain("\"type\": \"streamableHttp\"");
+    expect(result.output).toContain("\"url\": \"https://mcp.supabase.com/mcp\"");
+    expect(result.output).toContain("\"disabled\": false");
+    expect(result.warnings.some((warning) => warning.code === "cline-remote-default")).toBe(
       true
     );
   });

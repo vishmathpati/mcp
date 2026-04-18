@@ -36,6 +36,14 @@ export function assessCompatibility(
           "This server includes environment variables alongside remote transport. Review manual setup notes before use."
       });
     }
+
+    if (toolId === "cline" && server.transport.type === "http") {
+      warnings.push({
+        code: "cline-remote-default",
+        message:
+          "Cline remote servers require an explicit transport type. This conversion defaults to streamableHttp; switch to sse if the provider requires legacy SSE."
+      });
+    }
   }
 
   return warnings;
