@@ -80,6 +80,36 @@ export function formatForTool(canonical: CanonicalSnippet, toolId: string): stri
     return JSON.stringify({ context_servers }, null, 2);
   }
 
+  if (tool.configFamily === "amp-settings") {
+    const ampMcpServers = Object.fromEntries(
+      canonical.servers.map((server) => {
+        if (server.transport.type === "stdio") {
+          return [
+            server.id,
+            {
+              command: server.transport.command,
+              args: server.transport.args,
+              env: Object.keys(server.env).length > 0 ? server.env : undefined
+            }
+          ];
+        }
+
+        return [
+          server.id,
+          {
+            url: server.transport.url,
+            headers:
+              Object.keys(server.transport.headers).length > 0
+                ? server.transport.headers
+                : undefined
+          }
+        ];
+      })
+    );
+
+    return JSON.stringify({ "amp.mcpServers": ampMcpServers }, null, 2);
+  }
+
   if (tool.configFamily !== "json-mcpServers") {
     throw new UnsupportedTargetToolError(
       toolId,

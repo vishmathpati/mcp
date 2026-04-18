@@ -23,7 +23,7 @@ This release is backed by:
 Current scaffold breadth:
 
 - 17 tracked target tools
-- 14 verified formatter targets
+- 15 verified formatter targets
 - 7 seeded providers
 - 3 MCP transport types
 
