@@ -4,10 +4,14 @@
   "supportLevel": "registry-seeded",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
-  "supportedMcpTypes": ["local-stdio", "hosted-remote"],
+  "supportedMcpTypes": ["local-stdio", "hosted-remote", "streamable-http"],
   "supportedCapabilities": ["tools", "resources"],
   "unsupportedCapabilities": [],
   "homepage": "https://cline.bot/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked in source of truth for later formatter validation."]
+  "sourceReference": "https://github.com/cline/cline/blob/main/docs/mcp/adding-and-configuring-servers.mdx",
+  "notes": [
+    "Official docs show a top-level mcpServers config shape.",
+    "Local servers use command, args, env, alwaysAllow, and disabled fields.",
+    "Remote servers use url plus transport-specific type values such as streamableHttp or sse."
+  ]
 }
