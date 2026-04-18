@@ -15,6 +15,7 @@ This file is the human-readable view of the repo-owned source of truth.
 - OpenCode
 - Cursor
 - VS Code GitHub Copilot
+- Windsurf
 
 ### Tracked next
 
@@ -23,7 +24,6 @@ This file is the human-readable view of the repo-owned source of truth.
 - Replit
 - Roo Code
 - Warp
-- Windsurf
 - Zed
 
 ### Planned

@@ -113,6 +113,34 @@ describe("convertSnippet", () => {
     );
   });
 
+  it("converts the Hostinger fixture to Windsurf stdio format", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/hostinger/claude-code/source.txt"),
+      "windsurf"
+    );
+
+    expect(result.output).toContain("\"hostinger-api\"");
+    expect(result.output).toContain("\"command\": \"hostinger-api-mcp\"");
+    expect(result.output).toContain("\"args\": [");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
+  it("converts the Supabase fixture to Windsurf remote format with serverUrl", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/supabase/claude-code/source.txt"),
+      "windsurf"
+    );
+
+    expect(result.output).toContain("\"supabase\"");
+    expect(result.output).toContain("\"serverUrl\": \"https://mcp.supabase.com/mcp\"");
+    expect(result.output).not.toContain("\"url\": \"https://mcp.supabase.com/mcp\"");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
   it("fails loudly on unsupported prose input", () => {
     expect(() => convertSnippet("hello world random text", "codex")).toThrowError(
       /supported/i
