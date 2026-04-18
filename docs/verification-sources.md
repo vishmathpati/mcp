@@ -1,0 +1,27 @@
+# Verification Sources
+
+This file tracks the primary sources used to move tools from `registry-seeded` to `converter-ready`.
+
+## Verified Clients
+
+| Tool | Primary source | Notes |
+| --- | --- | --- |
+| Amazon Q CLI | https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html | Official docs show `mcpServers` plus remote `type: "http"` support. |
+| Claude Code | https://docs.anthropic.com/en/docs/claude-code/mcp | Source-format baseline used by current fixtures and parser coverage. |
+| Claude Desktop | https://modelcontextprotocol.io/quickstart/user | Shared `mcpServers` family coverage, kept visible as a supported target. |
+| Cline | https://github.com/cline/cline/blob/main/docs/mcp/adding-and-configuring-servers.mdx | Official repo docs plus schema files confirm `stdio`, `streamableHttp`, and `sse`. |
+| Continue | https://docs.continue.dev/customize/deep-dives/mcp | Official docs confirm JSON config compatibility with Claude/Cursor/Cline-style MCP files. |
+| Cursor | https://docs.cursor.com/context/model-context-protocol | Official docs confirm local and remote MCP support in `mcpServers` config. |
+| OpenAI Codex | https://platform.openai.com/docs/codex/mcp | Official docs for Codex MCP configuration shape. |
+| OpenCode | https://opencode.ai/docs/mcp-servers/ | Uses a distinct `opencode.json` config with a top-level `mcp` block. |
+| VS Code GitHub Copilot | https://code.visualstudio.com/docs/copilot/chat/mcp-servers | Official docs cover MCP server configuration in VS Code. |
+| Windsurf | https://docs.windsurf.com/windsurf/cascade/mcp | Official docs cover `~/.codeium/windsurf/mcp_config.json`, `mcpServers`, and remote `serverUrl`. |
+
+## Verification Rule
+
+Nothing should move to `converter-ready` until all of these are true:
+
+- an official or primary-source config doc is linked here
+- at least one real provider fixture converts successfully
+- formatter output is covered by a passing test
+- any lossy or tool-specific default is documented in code or warnings

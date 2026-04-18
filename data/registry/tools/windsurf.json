@@ -1,13 +1,16 @@
 {
   "id": "windsurf",
   "displayName": "Windsurf",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools"],
   "unsupportedCapabilities": [],
   "homepage": "https://windsurf.com/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Growing tool called out by the user."]
+  "sourceReference": "https://docs.windsurf.com/windsurf/cascade/mcp",
+  "notes": [
+    "Official docs use ~/.codeium/windsurf/mcp_config.json with a top-level mcpServers block.",
+    "Remote HTTP examples prefer serverUrl and headers, so the formatter emits serverUrl for hosted MCPs."
+  ]
 }
