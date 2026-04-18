@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { ArrowUpRight, CheckCircle2, CircleAlert, Copy, Sparkles } from "lucide-react";
 import {
   convertSnippet,
@@ -7,6 +7,7 @@ import {
   loadToolRegistry
 } from "@mcp-converter/core";
 import type { CompatibilityWarning } from "@mcp-converter/core";
+import type { ProviderRegistryEntry, ToolRegistryEntry } from "@mcp-converter/core";
 import { Badge } from "./components/ui/badge.js";
 import { Button } from "./components/ui/button.js";
 import {
@@ -40,12 +41,18 @@ const seededExamples = {
 }`
 };
 
-const targetTools = loadToolRegistry().filter((tool) => tool.supportLevel !== "planned");
+const targetTools = loadToolRegistry().filter(
+  (tool: ToolRegistryEntry) => tool.supportLevel !== "planned"
+);
 const providers = loadProviders();
 const mcpTypes = loadMcpTypes();
 const toolGroups = {
-  "Verified now": targetTools.filter((tool) => tool.supportLevel === "converter-ready"),
-  "Tracked next": targetTools.filter((tool) => tool.supportLevel === "registry-seeded")
+  "Verified now": targetTools.filter(
+    (tool: ToolRegistryEntry) => tool.supportLevel === "converter-ready"
+  ),
+  "Tracked next": targetTools.filter(
+    (tool: ToolRegistryEntry) => tool.supportLevel === "registry-seeded"
+  )
 };
 
 export default function App() {
@@ -153,14 +160,14 @@ export default function App() {
                 <Field label="Target tool">
                   <Select value={targetTool} onChange={(event) => setTargetTool(event.target.value)}>
                     <optgroup label="Verified now">
-                      {toolGroups["Verified now"].map((tool) => (
+                      {toolGroups["Verified now"].map((tool: ToolRegistryEntry) => (
                         <option key={tool.id} value={tool.id}>
                           {tool.displayName}
                         </option>
                       ))}
                     </optgroup>
                     <optgroup label="Tracked next">
-                      {toolGroups["Tracked next"].map((tool) => (
+                      {toolGroups["Tracked next"].map((tool: ToolRegistryEntry) => (
                         <option key={tool.id} value={tool.id}>
                           {tool.displayName}
                         </option>
@@ -241,7 +248,7 @@ export default function App() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                {toolGroups["Verified now"].map((tool) => (
+                {toolGroups["Verified now"].map((tool: ToolRegistryEntry) => (
                   <div
                     key={tool.id}
                     className="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm"
@@ -261,7 +268,7 @@ export default function App() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                {providers.map((provider) => (
+                {providers.map((provider: ProviderRegistryEntry) => (
                   <div
                     key={provider.id}
                     className="rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-700"
@@ -292,7 +299,7 @@ function Field({
   children
 }: {
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <label className="space-y-2 text-sm font-medium text-neutral-700">
@@ -308,7 +315,7 @@ function InfoList({
   items
 }: {
   title: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   items: string[];
 }) {
   return (
