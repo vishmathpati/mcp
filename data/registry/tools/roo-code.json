@@ -1,13 +1,16 @@
 {
   "id": "roo-code",
   "displayName": "Roo Code",
-  "supportLevel": "registry-seeded",
+  "supportLevel": "converter-ready",
   "configFamily": "json-mcpServers",
   "configFormat": "json",
   "supportedMcpTypes": ["local-stdio", "hosted-remote"],
   "supportedCapabilities": ["tools", "resources"],
   "unsupportedCapabilities": [],
   "homepage": "https://roocode.com/",
-  "sourceReference": "https://modelcontextprotocol.io/clients",
-  "notes": ["Tracked for future release expansion."]
+  "sourceReference": "https://docs.roocode.com/features/mcp/using-mcp-in-roo",
+  "notes": [
+    "Official docs use global mcp_settings.json and project-level .roo/mcp.json, both with a top-level mcpServers block.",
+    "URL-based remote configs must declare an explicit type, so the formatter emits streamable-http by default for hosted MCPs."
+  ]
 }

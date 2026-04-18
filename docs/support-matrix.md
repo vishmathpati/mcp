@@ -14,6 +14,7 @@ This file is the human-readable view of the repo-owned source of truth.
 - OpenAI Codex
 - OpenCode
 - Cursor
+- Roo Code
 - VS Code GitHub Copilot
 - Windsurf
 
@@ -22,7 +23,6 @@ This file is the human-readable view of the repo-owned source of truth.
 - Amp
 - Augment Code
 - Replit
-- Roo Code
 - Warp
 - Zed
 

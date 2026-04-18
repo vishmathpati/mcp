@@ -141,6 +141,37 @@ describe("convertSnippet", () => {
     ).toBe(false);
   });
 
+  it("converts the Hostinger fixture to Roo Code stdio format", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/hostinger/claude-code/source.txt"),
+      "roo-code"
+    );
+
+    expect(result.output).toContain("\"hostinger-api\"");
+    expect(result.output).toContain("\"command\": \"hostinger-api-mcp\"");
+    expect(result.output).toContain("\"args\": [");
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
+  it("converts the Supabase fixture to Roo Code remote format with explicit type", () => {
+    const result = convertSnippet(
+      readFixture("data/fixtures/supabase/claude-code/source.txt"),
+      "roo-code"
+    );
+
+    expect(result.output).toContain("\"supabase\"");
+    expect(result.output).toContain("\"type\": \"streamable-http\"");
+    expect(result.output).toContain("\"url\": \"https://mcp.supabase.com/mcp\"");
+    expect(
+      result.warnings.some((warning) => warning.code === "roo-code-remote-default")
+    ).toBe(true);
+    expect(
+      result.warnings.some((warning) => warning.code === "registry-seeded-target")
+    ).toBe(false);
+  });
+
   it("fails loudly on unsupported prose input", () => {
     expect(() => convertSnippet("hello world random text", "codex")).toThrowError(
       /supported/i

@@ -44,6 +44,14 @@ export function assessCompatibility(
           "Cline remote servers require an explicit transport type. This conversion defaults to streamableHttp; switch to sse if the provider requires legacy SSE."
       });
     }
+
+    if (toolId === "roo-code" && server.transport.type === "http") {
+      warnings.push({
+        code: "roo-code-remote-default",
+        message:
+          "Roo Code URL-based servers require an explicit transport type. This conversion defaults to streamable-http; switch to sse if the provider is still using the legacy SSE transport."
+      });
+    }
   }
 
   return warnings;
