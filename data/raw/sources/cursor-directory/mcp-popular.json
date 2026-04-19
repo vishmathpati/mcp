@@ -1,0 +1,228 @@
+{
+  "sourceId": "cursor-directory",
+  "sourceUrl": "https://cursor.directory/plugins?tag=mcp",
+  "fetchedAt": "2026-04-19",
+  "notes": [
+    "This is the first popularity source for MCP ingestion.",
+    "This snapshot contains the visible MCP plugin list from the page scrape on 2026-04-19.",
+    "Only fields useful for our ingestion flow are stored here."
+  ],
+  "entries": [
+    {
+      "name": "GitHub",
+      "candidateId": "github",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-github",
+      "description": "Integration with GitHub issues through MCP."
+    },
+    {
+      "name": "Supabase",
+      "candidateId": "supabase",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-supabase",
+      "description": "PostgREST-backed Supabase MCP server for Postgres queries and operations."
+    },
+    {
+      "name": "Vercel",
+      "candidateId": "vercel",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-vercel",
+      "description": "Vercel infrastructure integration for AI model tasks."
+    },
+    {
+      "name": "Cloudflare",
+      "candidateId": "cloudflare",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-cloudflare",
+      "description": "Cloudflare developer platform MCP server for Workers, KV, R2, and D1."
+    },
+    {
+      "name": "Stripe",
+      "candidateId": "stripe",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-stripe",
+      "description": "Interact with the Stripe API."
+    },
+    {
+      "name": "Notion",
+      "candidateId": "notion",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-notion",
+      "description": "Notion API integration for databases, pages, blocks, and search."
+    },
+    {
+      "name": "Slack",
+      "candidateId": "slack",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-slack",
+      "description": "Slack workspace and messaging integration."
+    },
+    {
+      "name": "Sentry",
+      "candidateId": "sentry",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-sentry",
+      "description": "Sentry integration for issue analysis and debugging workflows."
+    },
+    {
+      "name": "Figma",
+      "candidateId": "figma",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-figma",
+      "description": "Figma design data for more accurate code generation."
+    },
+    {
+      "name": "Firebase",
+      "candidateId": "firebase",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-firebase",
+      "description": "Firebase Authentication, Firestore, and Storage integration."
+    },
+    {
+      "name": "Docker",
+      "candidateId": "docker",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-docker",
+      "description": "Manage containers, images, volumes, and networks."
+    },
+    {
+      "name": "Prisma",
+      "candidateId": "prisma",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-prisma",
+      "description": "Manage Prisma Postgres databases."
+    },
+    {
+      "name": "Resend",
+      "candidateId": "resend",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-resend",
+      "description": "Send emails using the Resend API."
+    },
+    {
+      "name": "Shopify",
+      "candidateId": "shopify",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-shopify",
+      "description": "Shopify API integration for products, orders, and customers."
+    },
+    {
+      "name": "Datadog",
+      "candidateId": "datadog",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-datadog",
+      "description": "Datadog incident and observability workflows."
+    },
+    {
+      "name": "MongoDB",
+      "candidateId": "mongodb",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-mongodb",
+      "description": "Read-only MongoDB exploration, schema inference, querying, and aggregation."
+    },
+    {
+      "name": "Upstash",
+      "candidateId": "upstash",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-upstash",
+      "description": "Upstash Developer API installer and MCP server."
+    },
+    {
+      "name": "Puppeteer",
+      "candidateId": "puppeteer",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-puppeteer",
+      "description": "Browser automation with screenshots and JavaScript execution."
+    },
+    {
+      "name": "Browserbase",
+      "candidateId": "browserbase",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-browserbase",
+      "description": "Cloud browser automation using Browserbase and Puppeteer."
+    },
+    {
+      "name": "Elasticsearch",
+      "candidateId": "elasticsearch",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-elasticsearch",
+      "description": "Natural language interaction with Elasticsearch clusters."
+    },
+    {
+      "name": "Sanity",
+      "candidateId": "sanity",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-sanity",
+      "description": "Create, query, and manage Sanity content and schemas."
+    },
+    {
+      "name": "Neon",
+      "candidateId": "neon",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-neon",
+      "description": "Interact with the Neon serverless Postgres platform."
+    },
+    {
+      "name": "Weaviate",
+      "candidateId": "weaviate",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-weaviate",
+      "description": "Weaviate AI-native database integration."
+    },
+    {
+      "name": "Railway",
+      "candidateId": "railway",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-railway",
+      "description": "Railway deployment management and monitoring."
+    },
+    {
+      "name": "Render",
+      "candidateId": "render",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-render",
+      "description": "Deployment-related tooling for Render."
+    },
+    {
+      "name": "Convex",
+      "candidateId": "convex",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-convex",
+      "description": "Convex development workflows for Cursor."
+    },
+    {
+      "name": "Axiom",
+      "candidateId": "axiom",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-axiom",
+      "description": "Query and analyze logs, traces, and event data."
+    },
+    {
+      "name": "Draw.io Diagrams MCP",
+      "candidateId": "draw-io-diagrams-mcp",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-draw-io-diagrams-mcp",
+      "description": "Search, view, and interact with Draw.io diagrams."
+    },
+    {
+      "name": "Context7",
+      "candidateId": "context7",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-context7",
+      "description": "Up-to-date code documentation."
+    },
+    {
+      "name": "Postman",
+      "candidateId": "postman",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-postman-mcp-server",
+      "description": "Postman remote MCP server for collections, environments, and workspaces."
+    },
+    {
+      "name": "Chrome DevTools",
+      "candidateId": "chrome-devtools",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-chrome-devtools",
+      "description": "Debug web pages directly in Chrome with DevTools."
+    },
+    {
+      "name": "shadcn/ui",
+      "candidateId": "shadcn",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-shadcn",
+      "description": "Browse, search, and install shadcn/ui components from registries."
+    },
+    {
+      "name": "AWS API MCP Server",
+      "candidateId": "aws-api-mcp-server",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-aws-api-mcp-server",
+      "description": "Interact with AWS services through AWS CLI commands."
+    },
+    {
+      "name": "Cursor Rules Generator",
+      "candidateId": "cursor-rules-generator",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-cursor-rules-generator-1",
+      "description": "Generate Cursor rules from a repository."
+    },
+    {
+      "name": "Excalidraw Architect MCP",
+      "candidateId": "excalidraw-architect-mcp",
+      "pluginUrl": "https://cursor.directory/plugins/mcp-excalidraw-architect-mcp",
+      "description": "Generate Excalidraw architecture diagrams with auto-layout."
+    },
+    {
+      "name": "Power BI Modeling MCP Server",
+      "candidateId": "power-bi-modeling-mcp-server",
+      "pluginUrl": "https://cursor.directory/plugins/power-bi-modeling-mcp-server",
+      "description": "Bring Power BI semantic modeling capabilities to AI agents."
+    }
+  ]
+}

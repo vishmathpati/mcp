@@ -10,6 +10,7 @@
   "scripts": {
     "build": "npm run build --workspace @mcp-converter/core && npm run build --workspace @mcp-converter/web",
     "dev": "npm run dev --workspace @mcp-converter/web",
+    "ingest:catalog": "node scripts/ingestion/build-server-catalog.mjs",
     "ingest:index": "node scripts/ingestion/generate-provider-index.mjs",
     "ingest:sync": "node scripts/ingestion/sync-provider.mjs",
     "test": "vitest run",

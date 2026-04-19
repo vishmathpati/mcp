@@ -1,0 +1,295 @@
+{
+  "generatedAt": "2026-04-19T07:09:54.516Z",
+  "strategy": "cursor-directory-first",
+  "totalCandidates": 36,
+  "entries": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-github",
+      "description": "Integration with GitHub issues through MCP.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-supabase",
+      "description": "PostgREST-backed Supabase MCP server for Postgres queries and operations.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-vercel",
+      "description": "Vercel infrastructure integration for AI model tasks.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-cloudflare",
+      "description": "Cloudflare developer platform MCP server for Workers, KV, R2, and D1.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-stripe",
+      "description": "Interact with the Stripe API.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-notion",
+      "description": "Notion API integration for databases, pages, blocks, and search.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-slack",
+      "description": "Slack workspace and messaging integration.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-sentry",
+      "description": "Sentry integration for issue analysis and debugging workflows.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-figma",
+      "description": "Figma design data for more accurate code generation.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-firebase",
+      "description": "Firebase Authentication, Firestore, and Storage integration.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-docker",
+      "description": "Manage containers, images, volumes, and networks.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-prisma",
+      "description": "Manage Prisma Postgres databases.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-resend",
+      "description": "Send emails using the Resend API.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-shopify",
+      "description": "Shopify API integration for products, orders, and customers.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-datadog",
+      "description": "Datadog incident and observability workflows.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-mongodb",
+      "description": "Read-only MongoDB exploration, schema inference, querying, and aggregation.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "upstash",
+      "name": "Upstash",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-upstash",
+      "description": "Upstash Developer API installer and MCP server.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-puppeteer",
+      "description": "Browser automation with screenshots and JavaScript execution.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "browserbase",
+      "name": "Browserbase",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-browserbase",
+      "description": "Cloud browser automation using Browserbase and Puppeteer.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-elasticsearch",
+      "description": "Natural language interaction with Elasticsearch clusters.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "sanity",
+      "name": "Sanity",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-sanity",
+      "description": "Create, query, and manage Sanity content and schemas.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-neon",
+      "description": "Interact with the Neon serverless Postgres platform.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "weaviate",
+      "name": "Weaviate",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-weaviate",
+      "description": "Weaviate AI-native database integration.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "railway",
+      "name": "Railway",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-railway",
+      "description": "Railway deployment management and monitoring.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-render",
+      "description": "Deployment-related tooling for Render.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "convex",
+      "name": "Convex",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-convex",
+      "description": "Convex development workflows for Cursor.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "axiom",
+      "name": "Axiom",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-axiom",
+      "description": "Query and analyze logs, traces, and event data.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "draw-io-diagrams-mcp",
+      "name": "Draw.io Diagrams MCP",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-draw-io-diagrams-mcp",
+      "description": "Search, view, and interact with Draw.io diagrams.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-context7",
+      "description": "Up-to-date code documentation.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-postman-mcp-server",
+      "description": "Postman remote MCP server for collections, environments, and workspaces.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "chrome-devtools",
+      "name": "Chrome DevTools",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-chrome-devtools",
+      "description": "Debug web pages directly in Chrome with DevTools.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn/ui",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-shadcn",
+      "description": "Browse, search, and install shadcn/ui components from registries.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "aws-api-mcp-server",
+      "name": "AWS API MCP Server",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-aws-api-mcp-server",
+      "description": "Interact with AWS services through AWS CLI commands.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "cursor-rules-generator",
+      "name": "Cursor Rules Generator",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-cursor-rules-generator-1",
+      "description": "Generate Cursor rules from a repository.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "excalidraw-architect-mcp",
+      "name": "Excalidraw Architect MCP",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/mcp-excalidraw-architect-mcp",
+      "description": "Generate Excalidraw architecture diagrams with auto-layout.",
+      "verificationStatus": "discovered"
+    },
+    {
+      "id": "power-bi-modeling-mcp-server",
+      "name": "Power BI Modeling MCP Server",
+      "source": "cursor-directory",
+      "discoveryUrl": "https://cursor.directory/plugins/power-bi-modeling-mcp-server",
+      "description": "Bring Power BI semantic modeling capabilities to AI agents.",
+      "verificationStatus": "discovered"
+    }
+  ]
+}
