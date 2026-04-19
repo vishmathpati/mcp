@@ -44,7 +44,8 @@ const seededExamples = {
 const targetTools = loadToolRegistry().filter(
   (tool: ToolRegistryEntry) => tool.supportLevel !== "planned"
 );
-const providers = loadProviders();
+const providers = sortProviders(loadProviders());
+const providerExamples = buildProviderExamples(providers);
 const mcpTypes = loadMcpTypes();
 const toolGroups = {
   "Verified now": targetTools.filter(
@@ -59,6 +60,8 @@ export default function App() {
   const [input, setInput] = useState(seededExamples.hostinger);
   const [targetTool, setTargetTool] = useState("codex");
   const [selectedExample, setSelectedExample] = useState("hostinger");
+  const selectedProvider = providers.find((provider) => provider.id === selectedExample) ?? providers[0];
+  const selectedProviderHasFixture = hasFixtureExample(selectedExample);
 
   const result = useMemo(() => {
     try {
@@ -108,7 +111,7 @@ export default function App() {
                   variant="secondary"
                   onClick={() => {
                     setSelectedExample("supabase");
-                    setInput(seededExamples.supabase);
+                    setInput(providerExamples.supabase);
                   }}
                 >
                   <Sparkles className="mr-2 size-4" />
@@ -148,14 +151,22 @@ export default function App() {
                   <Select
                     value={selectedExample}
                     onChange={(event) => {
-                      const next = event.target.value as keyof typeof seededExamples;
+                      const next = event.target.value;
                       setSelectedExample(next);
-                      setInput(seededExamples[next]);
+                      setInput(providerExamples[next]);
                     }}
                   >
-                    <option value="hostinger">Hostinger</option>
-                    <option value="supabase">Supabase</option>
+                    {providers.map((provider: ProviderRegistryEntry) => (
+                      <option key={provider.id} value={provider.id}>
+                        {provider.displayName}
+                      </option>
+                    ))}
                   </Select>
+                  <p className="text-xs leading-5 text-neutral-500">
+                    {selectedProviderHasFixture
+                      ? `${selectedProvider.displayName} is using a fixture-backed example from our verified set.`
+                      : `${selectedProvider.displayName} is using a starter template generated from the provider registry.`}
+                  </p>
                 </Field>
                 <Field label="Target tool">
                   <Select value={targetTool} onChange={(event) => setTargetTool(event.target.value)}>
@@ -271,9 +282,12 @@ export default function App() {
                 {providers.map((provider: ProviderRegistryEntry) => (
                   <div
                     key={provider.id}
-                    className="rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-700"
+                    className="flex items-center justify-between rounded-lg border border-neutral-200 px-3 py-2 text-sm text-neutral-700"
                   >
-                    {provider.displayName}
+                    <span>{provider.displayName}</span>
+                    <Badge variant="secondary">
+                      {hasFixtureExample(provider.id) ? "fixture" : "template"}
+                    </Badge>
                   </div>
                 ))}
               </CardContent>
@@ -283,6 +297,82 @@ export default function App() {
       </div>
     </main>
   );
+}
+
+function sortProviders(entries: ProviderRegistryEntry[]) {
+  return [...entries].sort((left, right) => {
+    const leftFixture = hasFixtureExample(left.id);
+    const rightFixture = hasFixtureExample(right.id);
+
+    if (leftFixture !== rightFixture) {
+      return leftFixture ? -1 : 1;
+    }
+
+    return left.displayName.localeCompare(right.displayName);
+  });
+}
+
+function hasFixtureExample(providerId: string) {
+  return providerId in seededExamples;
+}
+
+function buildProviderExamples(entries: ProviderRegistryEntry[]) {
+  return Object.fromEntries(
+    entries.map((provider) => [
+      provider.id,
+      hasFixtureExample(provider.id)
+        ? seededExamples[provider.id as keyof typeof seededExamples]
+        : buildTemplateExample(provider)
+    ])
+  ) as Record<string, string>;
+}
+
+function buildTemplateExample(provider: ProviderRegistryEntry) {
+  if (provider.knownMcpTypes.includes("local-stdio")) {
+    return `{
+  "mcpServers": {
+    "${provider.id}": {
+      "command": "YOUR_${toEnvToken(provider.id)}_MCP_COMMAND",
+      "args": [],
+      "env": ${buildEnvObject(provider)}
+    }
+  }
+}`;
+  }
+
+  return `{
+  "mcpServers": {
+    "${provider.id}": {
+      "url": "https://your-${provider.id}-mcp-url"
+${buildRemoteFields(provider)}
+    }
+  }
+}`;
+}
+
+function buildEnvObject(provider: ProviderRegistryEntry) {
+  if (provider.authMode === "env") {
+    return `{
+        "${toEnvToken(provider.id)}_API_TOKEN": "YOUR_TOKEN"
+      }`;
+  }
+
+  return "{}";
+}
+
+function buildRemoteFields(provider: ProviderRegistryEntry) {
+  if (provider.authMode === "env") {
+    return `,
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN"
+      }`;
+  }
+
+  return "";
+}
+
+function toEnvToken(value: string) {
+  return value.replace(/[^a-z0-9]+/gi, "_").toUpperCase();
 }
 
 function Metric({ value, label }: { value: number; label: string }) {
