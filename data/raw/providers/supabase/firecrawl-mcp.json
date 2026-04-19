@@ -1,0 +1,33 @@
+{
+  "providerId": "supabase",
+  "collectedAt": "2026-04-19",
+  "collector": "firecrawl",
+  "sourceUrl": "https://supabase.com/mcp",
+  "resolvedDocsUrl": "https://supabase.com/docs/guides/getting-started/mcp",
+  "rawExtract": {
+    "providerName": "Supabase",
+    "docsUrl": "https://supabase.com/docs/guides/getting-started/mcp",
+    "remoteUrls": [
+      "https://mcp.supabase.com/mcp",
+      "http://localhost:54321/mcp"
+    ],
+    "sampleSnippets": [
+      "{\"mcpServers\":{\"supabase\":{\"url\":\"https://mcp.supabase.com/mcp\"}}}",
+      "{\"mcpServers\":{\"supabase\":{\"type\":\"http\",\"url\":\"https://mcp.supabase.com/mcp?project_ref=${SUPABASE_PROJECT_REF}\",\"headers\":{\"Authorization\":\"Bearer ${SUPABASE_ACCESS_TOKEN}\"}}}}"
+    ],
+    "authNotes": [
+      "Some MCP clients automatically open a browser for Supabase login during setup.",
+      "Hosted Supabase MCP uses dynamic client registration, so a PAT is no longer required for normal interactive setup.",
+      "Manual Authorization header setup is documented for CI and non-DCR clients."
+    ],
+    "mentionedClients": [
+      "Cursor",
+      "Claude Code"
+    ],
+    "summary": "Supabase documents a hosted MCP server with a default remote URL, optional project scoping, browser-based authentication for interactive clients, and a manual header-based flow for CI or clients that need explicit credentials."
+  },
+  "collectionNotes": [
+    "This is raw collected data, not runtime source of truth.",
+    "Collected from Firecrawl scrape output and trimmed to the useful MCP fields."
+  ]
+}

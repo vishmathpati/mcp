@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-04-19T06:30:53.133Z",
+  "summary": {
+    "totalProvidersTracked": 7,
+    "discovered": 1,
+    "scraped": 1,
+    "cleaned": 1,
+    "verified": 1,
+    "published": 7,
+    "blocked": 0
+  },
+  "providers": [
+    {
+      "providerId": "cloudflare",
+      "displayName": "Cloudflare",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/cloudflare.json"
+      },
+      "docsReference": "https://developers.cloudflare.com/"
+    },
+    {
+      "providerId": "github",
+      "displayName": "GitHub",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/github.json"
+      },
+      "docsReference": "https://github.com/"
+    },
+    {
+      "providerId": "hostinger",
+      "displayName": "Hostinger",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/hostinger.json"
+      },
+      "docsReference": "https://www.hostinger.com/support/11079316-hostinger-api-mcp-server/"
+    },
+    {
+      "providerId": "notion",
+      "displayName": "Notion",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/notion.json"
+      },
+      "docsReference": "https://developers.notion.com/"
+    },
+    {
+      "providerId": "stripe",
+      "displayName": "Stripe",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/stripe.json"
+      },
+      "docsReference": "https://docs.stripe.com/"
+    },
+    {
+      "providerId": "supabase",
+      "displayName": "Supabase",
+      "pipelineStatus": {
+        "discovered": true,
+        "scraped": true,
+        "cleaned": true,
+        "verified": true,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": "data/raw/providers/supabase/firecrawl-mcp.json",
+        "clean": "data/clean/providers/supabase.json",
+        "verification": "data/verification/providers/supabase.json",
+        "registry": "data/registry/providers/supabase.json"
+      },
+      "docsReference": "https://supabase.com/docs/guides/getting-started/mcp"
+    },
+    {
+      "providerId": "vercel",
+      "displayName": "Vercel",
+      "pipelineStatus": {
+        "discovered": false,
+        "scraped": false,
+        "cleaned": false,
+        "verified": false,
+        "published": true,
+        "blocked": false
+      },
+      "paths": {
+        "raw": null,
+        "clean": null,
+        "verification": null,
+        "registry": "data/registry/providers/vercel.json"
+      },
+      "docsReference": "https://vercel.com/docs"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "supabase",
+  "displayName": "Supabase",
+  "homepage": "https://supabase.com/",
+  "docsReference": "https://supabase.com/docs/guides/getting-started/mcp",
+  "authMode": "hosted-login",
+  "knownMcpTypes": [
+    "hosted-remote",
+    "streamable-http"
+  ],
+  "knownSourceFormats": [
+    "json-mcpServers"
+  ],
+  "remoteEndpoints": [
+    "https://mcp.supabase.com/mcp",
+    "http://localhost:54321/mcp"
+  ],
+  "exampleClientsMentioned": [
+    "Cursor",
+    "Claude Code"
+  ],
+  "notes": [
+    "Official hosted MCP docs show remote URL-based configuration.",
+    "Some clients trigger browser-based auth during setup.",
+    "Manual header-based auth exists for CI or non-DCR clients.",
+    "Some MCP clients automatically open a browser for Supabase login during setup.",
+    "Hosted Supabase MCP uses dynamic client registration, so a PAT is no longer required for normal interactive setup.",
+    "Manual Authorization header setup is documented for CI and non-DCR clients.",
+    "This is raw collected data, not runtime source of truth.",
+    "Collected from Firecrawl scrape output and trimmed to the useful MCP fields."
+  ],
+  "source": {
+    "collectedFrom": "firecrawl",
+    "collectedAt": "2026-04-19",
+    "sourceUrl": "https://supabase.com/mcp"
+  }
+}

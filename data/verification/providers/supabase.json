@@ -1,0 +1,24 @@
+{
+  "providerId": "supabase",
+  "checkedAt": "2026-04-19",
+  "pipelineStatus": {
+    "discovered": true,
+    "scraped": true,
+    "cleaned": true,
+    "verified": true,
+    "published": true,
+    "blocked": false
+  },
+  "evidence": {
+    "primaryDoc": "https://supabase.com/docs/guides/getting-started/mcp",
+    "rawPath": "data/raw/providers/supabase/firecrawl-mcp.json",
+    "cleanPath": "data/clean/providers/supabase.json",
+    "fixturePath": "data/fixtures/supabase",
+    "registryPath": "data/registry/providers/supabase.json"
+  },
+  "verificationNotes": [
+    "Provider exists in the committed runtime registry.",
+    "At least one fixture directory exists for this provider.",
+    "Supabase documents a hosted MCP server with a default remote URL, optional project scoping, browser-based authentication for interactive clients, and a manual header-based flow for CI or clients that need explicit credentials."
+  ]
+}
